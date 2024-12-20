@@ -46,7 +46,7 @@ const Sidebar = () => {
 
             <nav className='mt-5 flex-1'>
                 <ul className='flex flex-col gap-4 flex-1'>
-                    {navItems.map(({ name, url, icon }) => (
+                    {navItems.slice(0,5).map(({ name, url, icon }) => (
                         <Link href={url} key={name}>
                             <li className={cn("flex items-center gap-5 px-4 py-3 rounded-lg", (pathname == url) && "bg-blue-500")}>
                                 <Image src={icon} alt='logo' width={28} height={32} />
@@ -59,7 +59,7 @@ const Sidebar = () => {
 
             <nav className='mt-5 flex-1 relative'>
                 <ul className='flex flex-col gap-2 flex-1 absolute bottom-0 w-full'>
-                    {bottomItems.map(({ name, url, icon }) => (
+                    {navItems.slice(5,).map(({ name, url, icon }) => (
                         <Link href={url} key={name}>
                             <li className={cn("flex items-center gap-5 px-4 py-3 rounded-lg", (pathname == url) && "bg-blue-500")}>
                                 <Image src={icon} alt='logo' width={28} height={32} />

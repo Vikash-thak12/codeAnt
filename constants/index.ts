@@ -24,9 +24,6 @@ export const navItems = [
       icon: "/assets/gear.png",
       url: "/",
     },
-  ];
-
-  export const bottomItems = [
     {
       name: "Support",
       icon: "/assets/phone.png",
@@ -37,9 +34,7 @@ export const navItems = [
       icon: "/assets/sign-out.png",
       url: "/logout",
     }
-  ];
-  
-  
+  ];  
 
   export const repo = [
     {

@@ -30,9 +30,11 @@ const Header = () => {
         </div>
         <div>
           <Sheet open={isopen} onOpenChange={setIsOpen}>
+
             <SheetTrigger>
               <Image src={"/assets/bars.png"} alt='logo' width={24} height={24} />
             </SheetTrigger>
+
             <SheetContent className='w-full h-[500px]' side={"top"}>
               <SheetHeader>
                 <SheetTitle>
@@ -41,21 +43,22 @@ const Header = () => {
                     <p>CodeInt AI</p>
                   </div>
                 </SheetTitle>
-                <Separator />
+
                 <div>
                   <nav className='mt-5 flex-1 text-brand'>
                     <ul className='flex flex-col gap-2 flex-1'>
                       {navItems.map(({ name, url, icon }) => (
                         <Link href={url} key={name}>
                           <li className={cn("flex items-center gap-5 px-4 py-3 rounded-lg", (pathname == url) && "bg-blue-500")}>
-                            <Image src={icon} alt='logo' width={32} height={32} />
-                            <p className={cn("hidden lg:block text-black", (pathname == url) && "text-black")}>Vikash</p>
+                            <Image src={icon} alt='logo' width={24} height={32} />
+                            <p className={cn("text-black", (pathname == url) && "text-white")}>{name}</p>
                           </li>
                         </Link>
                       ))}
                     </ul>
                   </nav>
                 </div>
+
                 <Separator />
               </SheetHeader>
             </SheetContent>
