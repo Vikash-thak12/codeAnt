@@ -67,7 +67,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                     </div>
                 </div>
             </div>
-            <div className='bg-yellow-500 w-full'>
+            <div className='bg-gray-200 w-full'>
                 {children}
             </div>
         </div>
