@@ -15,6 +15,14 @@ import { usePathname } from 'next/navigation'
 import { Separator } from '@radix-ui/react-select'
 import { cn } from '@/lib/utils'
 
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
 
 const Header = () => {
 
@@ -28,6 +36,7 @@ const Header = () => {
           <Image src={"/assets/logo.png"} alt='logo' width={32} height={32} />
           <p className='font-semibold text-xl'>CodeAnt AI</p>
         </div>
+
         <div>
           <Sheet open={isopen} onOpenChange={setIsOpen}>
 
@@ -35,14 +44,27 @@ const Header = () => {
               <Image src={"/assets/bars.png"} alt='logo' width={24} height={24} />
             </SheetTrigger>
 
-            <SheetContent className='w-full h-[500px]' side={"top"}>
+            <SheetContent className='w-full h-[600px]' side={"top"}>
               <SheetHeader>
-                <SheetTitle>
+                <SheetTitle className='mb-4'>
                   <div className='flex items-center gap-2'>
                     <Image src={"/assets/icon.png"} alt='logo' width={40} height={40} />
                     <p>CodeInt AI</p>
                   </div>
                 </SheetTitle>
+
+                <div className='mt-5'>
+                  <Select>
+                    <SelectTrigger className="w-full p-5 border border-gray-200 ">
+                      <SelectValue placeholder="UtkarshDhairyaPanwar" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="light">UtkarshDhairyaPanwar1</SelectItem>
+                      <SelectItem value="dark">UtkarshDhairyaPanwar2</SelectItem>
+                      <SelectItem value="system">UtkarshDhairyaPanwar3</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
 
                 <div>
                   <nav className='mt-5 flex-1 text-brand'>

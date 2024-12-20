@@ -27,12 +27,12 @@ export const navItems = [
     {
       name: "Support",
       icon: "/assets/phone.png",
-      url: "/support",
+      url: "/",
     },
     {
       name: "Logout",
       icon: "/assets/sign-out.png",
-      url: "/logout",
+      url: "/",
     }
   ];  
 
