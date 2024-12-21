@@ -72,8 +72,8 @@ const Header = () => {
                       {navItems.map(({ name, url, icon }) => (
                         <Link href={url} key={name}>
                           <li className={cn("flex items-center gap-5 px-4 py-3 rounded-lg", (pathname == url) && "bg-blue-500")}>
-                            <Image src={icon} alt='logo' width={24} height={32} />
-                            <p className={cn("text-black", (pathname == url) && "text-white")}>{name}</p>
+                            <Image src={icon} alt='logo' width={24} height={32} className={cn((pathname == url) && 'invert')} />
+                            <p>{name}</p>
                           </li>
                         </Link>
                       ))}
