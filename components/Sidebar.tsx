@@ -49,7 +49,7 @@ const Sidebar = () => {
                     {navItems.slice(0,5).map(({ name, url, icon }) => (
                         <Link href={url} key={name}>
                             <li className={cn("flex items-center gap-5 px-4 py-3 rounded-lg", (pathname == url) && "bg-blue-500")}>
-                                <Image src={icon} alt='logo' width={28} height={32} />
+                                <Image src={icon} alt='logo' width={28} height={32} className={cn("text-black",(pathname == url) && "invert brightness-200")} />
                                 <p className={cn("hidden lg:block text-black", (pathname == url) && "text-white")}>{name}</p>
                             </li>
                         </Link>
@@ -62,7 +62,7 @@ const Sidebar = () => {
                     {navItems.slice(5,).map(({ name, url, icon }) => (
                         <Link href={url} key={name}>
                             <li className={cn("flex items-center gap-5 px-4 py-3 rounded-lg", (pathname == url) && "bg-blue-500")}>
-                                <Image src={icon} alt='logo' width={28} height={32} />
+                                <Image src={icon} alt='logo' width={28} height={32} className={cn("text-black",(pathname == url) && "invert brightness-200")} />
                                 <p className={cn("hidden lg:block text-black", (pathname == url) && "text-white")}>{name}</p>
                             </li>
                         </Link>

@@ -1,37 +1,37 @@
 export const navItems = [
     {
       name: "Repositories",
-      icon: "/assets/home.png",
+      icon: "/assets/home.svg",
       url: "/repositories",
     },
     {
       name: "AI Code Review",
-      icon: "/assets/code.png",
+      icon: "/assets/code.svg",
       url: "/",
     },
     {
       name: "Cloud Security",
-      icon: "/assets/cloud.png",
+      icon: "/assets/cloud.svg",
       url: "/",
     },
     {
       name: "How to Use",
-      icon: "/assets/book.png",
+      icon: "/assets/book1.svg",
       url: "/",
     },
     {
       name: "Settings",
-      icon: "/assets/gear.png",
+      icon: "/assets/gear.svg",
       url: "/",
     },
     {
       name: "Support",
-      icon: "/assets/phone.png",
+      icon: "/assets/call.svg",
       url: "/",
     },
     {
       name: "Logout",
-      icon: "/assets/sign-out.png",
+      icon: "/assets/logout.svg",
       url: "/",
     }
   ];  
